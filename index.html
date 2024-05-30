@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!--Styles-->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://kit.fontawesome.com/88bfaae0e7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Calculator</h1>
+        <div class="input-container">
+            <label for="num1">Number 1:</label>
+            <input id="num1" class="input-number" type="number" placeholder="Enter first number">
+        </div>
+        <div class="input-container">
+            <label for="num2">Number 2:</label>
+            <input id="num2" class="input-number" type="number" placeholder="Enter second number">
+        </div>
+        <div class="input-container">
+            <label for="operation">Choose operation:</label>
+            <select id="operation">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+        </div>
+        <div class="button-container">
+            <button onclick="calculate()" class="btn-calculate">Calculate</button>
+            <button onclick="clearCalculator()" title="Clean" class="btn-clean"><i class="fa-solid fa-repeat"></i></button>
+        </div>
+        <span id="txtResult" class="result"></span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
